@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-12T10:24:23.694Z",
-    "end": "2023-06-12T10:24:24.815Z",
-    "duration": 1121,
+    "start": "2023-06-14T13:10:26.121Z",
+    "end": "2023-06-14T13:10:27.239Z",
+    "duration": 1118,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "6182b157-6f20-4430-b4fe-2cd075a602a9",
+      "uuid": "a3c5eda0-c6ed-4f83-aa9d-9b5da6f38927",
       "title": "",
-      "fullFile": "cypress/integration/UI/customCommands.js",
-      "file": "cypress/integration/UI/customCommands.js",
+      "fullFile": "cypress\\e2e\\UI\\customCommands.js",
+      "file": "cypress\\e2e\\UI\\customCommands.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "4262ca32-4582-43b6-9470-9a0a9aaad1d7",
+          "uuid": "0ea03163-9b75-4cf8-9765-bc459bcbc3ba",
           "title": "E2E - CustomCommands",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Przykład zastosowania komendy",
               "fullTitle": "E2E - CustomCommands Przykład zastosowania komendy",
               "timedOut": null,
-              "duration": 1099,
+              "duration": 1074,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.openTshirtsTab();",
               "err": {},
-              "uuid": "5cb1110e-7fad-4027-9a37-f9dd5a62ea23",
-              "parentUUID": "4262ca32-4582-43b6-9470-9a0a9aaad1d7",
+              "uuid": "aa170c84-4067-479b-8bb4-147c0c0877d8",
+              "parentUUID": "0ea03163-9b75-4cf8-9765-bc459bcbc3ba",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5cb1110e-7fad-4027-9a37-f9dd5a62ea23"
+            "aa170c84-4067-479b-8bb4-147c0c0877d8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1099,
+          "duration": 1074,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

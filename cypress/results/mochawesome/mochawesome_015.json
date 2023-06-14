@@ -1,80 +1,23 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-12T10:25:08.133Z",
-    "end": "2023-06-12T10:25:11.973Z",
-    "duration": 3840,
-    "testsRegistered": 1,
-    "passPercent": 100,
-    "pendingPercent": 0,
+    "start": "2023-06-14T13:11:36.105Z",
+    "end": "2023-06-14T13:11:36.109Z",
+    "duration": 4,
+    "testsRegistered": 0,
+    "passPercent": null,
+    "pendingPercent": null,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    {
-      "uuid": "764ac3d9-8339-46ad-83db-51cfa6734557",
-      "title": "",
-      "fullFile": "cypress/integration/shadow.js",
-      "file": "cypress/integration/shadow.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "d21b297b-b95d-49a3-b25d-641b54fadc73",
-          "title": "E2E - Shadow Dom",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Wykorzystanie metody Shadow",
-              "fullTitle": "E2E - Shadow Dom Wykorzystanie metody Shadow",
-              "timedOut": null,
-              "duration": 1613,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit(\"https://www.htmlelements.com/demos/menu/shadow-dom/index.htm\"); // Jeśli include ShadowDom jest FALSE w Cypress.json to wtedy trzeba dodać shadow\n// cy.get(\".smart-ui-component\").shadow().contains(\"File\").click();\ncy.contains(\"File\").click();",
-              "err": {},
-              "uuid": "2ede292e-d976-4ec5-b00c-71b79a607c12",
-              "parentUUID": "d21b297b-b95d-49a3-b25d-641b54fadc73",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "2ede292e-d976-4ec5-b00c-71b79a607c12"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 1613,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    }
+    false
   ],
   "meta": {
     "mocha": {

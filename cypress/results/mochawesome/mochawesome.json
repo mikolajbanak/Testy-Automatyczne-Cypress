@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-12T09:51:44.099Z",
-    "end": "2023-06-12T09:51:48.682Z",
-    "duration": 4583,
+    "start": "2023-06-14T13:06:34.941Z",
+    "end": "2023-06-14T13:06:38.437Z",
+    "duration": 3496,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "93c01917-9683-4749-a8e0-784e6e003468",
+      "uuid": "8f572687-7b23-4809-9dda-c077af3e14c3",
       "title": "",
-      "fullFile": "cypress/integration/UI/klikniecie.js",
-      "file": "cypress/integration/UI/klikniecie.js",
+      "fullFile": "cypress\\e2e\\UI\\klikniecie.js",
+      "file": "cypress\\e2e\\UI\\klikniecie.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "348a3b15-6a09-4960-973e-3b5b6d07974b",
+          "uuid": "51a75d87-6d81-4ac4-a550-68bd389219ca",
           "title": "E2E - Akcje kliknięcia",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Klikniecie na element",
               "fullTitle": "E2E - Akcje kliknięcia Klikniecie na element",
               "timedOut": null,
-              "duration": 4567,
+              "duration": 3436,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"/\");\ncy.contains('[title=\"Contact us\"]', 'Contact us').click();\ncy.get('[title=\"Return to Home\"]').click();",
               "err": {},
-              "uuid": "76b49e63-bab8-43ca-8156-dc3eb9cee3e2",
-              "parentUUID": "348a3b15-6a09-4960-973e-3b5b6d07974b",
+              "uuid": "2677a33d-7580-4e6e-9582-06f28b2a8047",
+              "parentUUID": "51a75d87-6d81-4ac4-a550-68bd389219ca",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "76b49e63-bab8-43ca-8156-dc3eb9cee3e2"
+            "2677a33d-7580-4e6e-9582-06f28b2a8047"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4567,
+          "duration": 3436,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

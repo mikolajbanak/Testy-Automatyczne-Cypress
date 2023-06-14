@@ -7,8 +7,8 @@
     "open": "npx cypress open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "allTests": "npx cypress run --record --key 18998864-dc91-49ac-92bf-fc89937f8a4c",
-    "pojedynczyTest": "npx cypress run --spec 'cypress/integration/UI/klikniecie.js' --headed",
-    "chrome": "npx cypress run --browser chrome --spec 'cypress/integration/UI/klikniecie.js' --headed",
+    "pojedynczyTest": "npx cypress run --spec 'cypress/e2e/UI/klikniecie.js' --headed",
+    "chrome": "npx cypress run --browser chrome --spec 'cypress/e2e/UI/klikniecie.js' --headed",
     "firefox": "npm run pojedynczyTest -- --browser firefox",
     "browser": "npm run pojedynczyTest -- --browser firefox & npm run pojedynczyTest -- --browser edge",
     "delete:reports": "rm -r cypress/results/* || true",
@@ -16,7 +16,7 @@
     "report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
     "mochaawesome:merge": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json",
     "mochaawesome:html": "npx marge mochawesome.json",
-    "full:test": "npm run delete:reports && npm run chrome && npm run mochaawesome:merge && npm run mochaawesome:html --headed"
+    "full:test": "npm run delete:reports && allTests && npm run mochaawesome:merge && npm run mochaawesome:html --headed"
   },
   "keywords": [
     "cypress",

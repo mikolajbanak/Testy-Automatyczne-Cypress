@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="2.552" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2023-06-12T20:22:12" tests="0" file="cypress\e2e\UI\klikniecie.js" time="0.000" failures="0">
-  </testsuite>
-  <testsuite name="E2E - Akcje kliknięcia" timestamp="2023-06-12T20:22:12" tests="1" time="2.451" failures="0">
-    <testcase name="E2E - Akcje kliknięcia Klikniecie na element" time="2.519" classname="Klikniecie na element">
-    </testcase>
-  </testsuite>
-</testsuites>

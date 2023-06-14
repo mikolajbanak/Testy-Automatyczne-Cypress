@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.597" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-06-14T13:11:47" tests="0" file="cypress\e2e\shadow.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Shadow Dom" timestamp="2023-06-14T13:11:47" tests="1" time="3.493" failures="0">
+    <testcase name="E2E - Shadow Dom Wykorzystanie metody Shadow" time="1.292" classname="Wykorzystanie metody Shadow">
+    </testcase>
+  </testsuite>
+</testsuites>
