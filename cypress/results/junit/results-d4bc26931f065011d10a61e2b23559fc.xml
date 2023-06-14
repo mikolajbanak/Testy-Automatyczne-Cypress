@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.885" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-06-12T20:13:39" tests="0" file="cypress\e2e\API\drugiTestApi.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Wykonywanie Zapytania Bezpośrednio do API" timestamp="2023-06-12T20:13:39" tests="1" time="0.802" failures="0">
+    <testcase name="E2E - Wykonywanie Zapytania Bezpośrednio do API Autoryzacja + Dodawanie nowego artykułu" time="0.861" classname="Autoryzacja + Dodawanie nowego artykułu">
+    </testcase>
+  </testsuite>
+</testsuites>

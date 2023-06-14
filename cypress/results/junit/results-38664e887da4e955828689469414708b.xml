@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="10.404" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-06-12T19:56:37" tests="0" file="cypress\e2e\UI\select.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Akcja wybrania opcji select" timestamp="2023-06-12T19:56:38" tests="2" time="10.287" failures="0">
+    <testcase name="E2E - Akcja wybrania opcji select Wybieranie opcji" time="3.739" classname="Wybieranie opcji">
+    </testcase>
+    <testcase name="E2E - Akcja wybrania opcji select Wybieranie wszystkich opcji" time="6.600" classname="Wybieranie wszystkich opcji">
+    </testcase>
+  </testsuite>
+</testsuites>

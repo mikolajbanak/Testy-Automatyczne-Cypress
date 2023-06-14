@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-12T20:18:13.152Z",
+    "end": "2023-06-12T20:18:14.925Z",
+    "duration": 1773,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cab8e490-dd80-486f-851a-ee712c4f209c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\lighthouse.js",
+      "file": "cypress\\e2e\\lighthouse.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1014d295-5318-46ef-ade9-37e052565a03",
+          "title": "Lighthouse Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Pierwszy test Lighthouse",
+              "fullTitle": "Lighthouse Test Pierwszy test Lighthouse",
+              "timedOut": null,
+              "duration": 1723,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.lighthouse({\n  performance: 85,\n  accessibility: 100,\n  \"best-practices\": 85,\n  seo: 85,\n  pwa: 100\n});",
+              "err": {},
+              "uuid": "68ac2ddd-559c-4b90-838b-956453db9935",
+              "parentUUID": "1014d295-5318-46ef-ade9-37e052565a03",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "68ac2ddd-559c-4b90-838b-956453db9935"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1723,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

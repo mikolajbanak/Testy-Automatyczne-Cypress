@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-06-12T20:13:39.387Z",
+    "end": "2023-06-12T20:13:40.272Z",
+    "duration": 885,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "50efd820-7800-4a85-a175-ad5221be6b93",
+      "title": "",
+      "fullFile": "cypress\\e2e\\API\\drugiTestApi.js",
+      "file": "cypress\\e2e\\API\\drugiTestApi.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "523c19c5-125f-4704-8241-a73920e58c83",
+          "title": "E2E - Wykonywanie Zapytania Bezpośrednio do API",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Autoryzacja + Dodawanie nowego artykułu",
+              "fullTitle": "E2E - Wykonywanie Zapytania Bezpośrednio do API Autoryzacja + Dodawanie nowego artykułu",
+              "timedOut": null,
+              "duration": 861,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Ta albo druga metoda do randomowego tytułu\n// const uuid = () => Cypress._.random(0, 1e6)\n// const id = uuid()\n// const testname = `testname${id}`\nconst uniqueSeed = Date.now().toString();\n// const getUniqueId = () => Cypress._.uniqueId('Tytuł ' + uniqueSeed);\nconst daneAutoryzacja = {\n  \"user\": {\n    \"email\": \"mbanak265@gmail.com\",\n    \"password\": \"Suchykanal123\"\n  }\n};\nconst daneArtykułu = {\n  \"article\": {\n    \"tagList\": [],\n    \"title\": 'tytuł ' + uniqueSeed,\n    \"description\": \"test\",\n    \"body\": \"test\"\n  }\n};\ncy.request(\"POST\", 'https://api.realworld.io/api/users/login', daneAutoryzacja).its(\"body\").then(res => {\n  console.log(res);\n  const authToken = res.user.token;\n  cy.request({\n    method: \"POST\",\n    url: \"https://api.realworld.io/api/articles/\",\n    body: daneArtykułu,\n    headers: {\n      Authorization: 'Token ' + authToken\n    }\n  }).then(res => {\n    expect(res.status).to.equal(200);\n  });\n});",
+              "err": {},
+              "uuid": "6a3f2287-c79e-4a62-8711-0af13f67c417",
+              "parentUUID": "523c19c5-125f-4704-8241-a73920e58c83",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6a3f2287-c79e-4a62-8711-0af13f67c417"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 861,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

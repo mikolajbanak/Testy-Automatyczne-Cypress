@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.642" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-06-12T20:21:54" tests="0" file="cypress\e2e\UI\customCommands.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - CustomCommands" timestamp="2023-06-12T20:21:54" tests="1" time="1.571" failures="0">
+    <testcase name="E2E - CustomCommands Przykład zastosowania komendy" time="1.629" classname="Przykład zastosowania komendy">
+    </testcase>
+  </testsuite>
+</testsuites>
