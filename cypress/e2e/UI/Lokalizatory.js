@@ -20,8 +20,8 @@ describe("E2E - Lesson",() => {
         //Dokładniejszy atrybut wraz podaniem znacznika
         cy.get('input[placeholder="Search"]')
 
-        //Pobieranie elementów po kilku atrybutach
-        cy.get('[src="http://automationpractice.pl/modules/themeconfigurator/img/banner-img7.jpg"][width="381"]')
+        // //Pobieranie elementów po kilku atrybutach
+        // cy.get('[src="http://automationpractice.pl/modules/themeconfigurator/img/banner-img7.jpg"][width="381"]')
 
         //Zalecana Praktyka pobierania elementów
         //cy.get('[data.cy="wyszukiwarla"]')
