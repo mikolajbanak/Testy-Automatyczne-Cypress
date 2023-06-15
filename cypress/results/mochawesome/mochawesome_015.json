@@ -1,23 +1,80 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-14T13:11:36.105Z",
-    "end": "2023-06-14T13:11:36.109Z",
-    "duration": 4,
-    "testsRegistered": 0,
-    "passPercent": null,
-    "pendingPercent": null,
+    "start": "2023-06-14T13:39:32.729Z",
+    "end": "2023-06-14T13:39:34.099Z",
+    "duration": 1370,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    false
+    {
+      "uuid": "f800c06d-e0d0-470e-bcbb-2ffcbc200464",
+      "title": "",
+      "fullFile": "cypress\\e2e\\lighthouse.js",
+      "file": "cypress\\e2e\\lighthouse.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d7ef66fd-cddb-47db-8cf7-853784f4871a",
+          "title": "Lighthouse Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Pierwszy test Lighthouse",
+              "fullTitle": "Lighthouse Test Pierwszy test Lighthouse",
+              "timedOut": null,
+              "duration": 1322,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.lighthouse({\n  performance: 85,\n  accessibility: 100,\n  \"best-practices\": 85,\n  seo: 85,\n  pwa: 100\n});",
+              "err": {},
+              "uuid": "0b031e87-ef1a-4165-840a-cbb2f9202c08",
+              "parentUUID": "d7ef66fd-cddb-47db-8cf7-853784f4871a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0b031e87-ef1a-4165-840a-cbb2f9202c08"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1322,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
   ],
   "meta": {
     "mocha": {

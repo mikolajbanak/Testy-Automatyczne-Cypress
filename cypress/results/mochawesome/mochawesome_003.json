@@ -1,99 +1,23 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 2,
-    "passes": 2,
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-14T13:09:59.794Z",
-    "end": "2023-06-14T13:10:03.474Z",
-    "duration": 3680,
-    "testsRegistered": 2,
-    "passPercent": 100,
-    "pendingPercent": 0,
+    "start": "2023-06-14T13:38:15.841Z",
+    "end": "2023-06-14T13:38:15.842Z",
+    "duration": 1,
+    "testsRegistered": 0,
+    "passPercent": null,
+    "pendingPercent": null,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    {
-      "uuid": "7935362d-1216-42e0-b108-0610b100ae42",
-      "title": "",
-      "fullFile": "cypress\\e2e\\UI\\Lokalizatory.js",
-      "file": "cypress\\e2e\\UI\\Lokalizatory.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "ae31ac8e-f9af-4c33-bbc9-7225dea8ddce",
-          "title": "E2E - Lesson",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Lokalizatory",
-              "fullTitle": "E2E - Lesson Lokalizatory",
-              "timedOut": null,
-              "duration": 2207,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit(\"/\");\n// Po znaczniku\ncy.get(\"a\");\n// Identyfikator\ncy.get(\"#search_query_top\");\n// Po klasie\ncy.get(\".form-control\");\n// Po atrybutach\ncy.get('[name=\"search_query\"]');\ncy.get('[placeholder=\"Search\"]');\n//Dokładniejszy atrybut wraz podaniem znacznika\ncy.get('input[placeholder=\"Search\"]');\n//Pobieranie elementów po kilku atrybutach\ncy.get('[src=\"http://automationpractice.pl/modules/themeconfigurator/img/banner-img7.jpg\"][width=\"381\"]');\n//Zalecana Praktyka pobierania elementów\n//cy.get('[data.cy=\"wyszukiwarla\"]')",
-              "err": {},
-              "uuid": "ada2ccd9-677a-401e-b768-696613811cff",
-              "parentUUID": "ae31ac8e-f9af-4c33-bbc9-7225dea8ddce",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Lokalizatory część2",
-              "fullTitle": "E2E - Lesson Lokalizatory część2",
-              "timedOut": null,
-              "duration": 1413,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit(\"/\");\ncy.contains(\"Shop now !\"); //< Szukanie po tekście\ncy.contains('[title=\"Contact us\"]', 'Contact us');\ncy.get(\"li\").parent(\"#home-page-tabs\").find(\"li\").eq(1);\ncy.get(\"li\").parent(\"#home-page-tabs\").find(\"li\").contains(\"Best Sellers\");",
-              "err": {},
-              "uuid": "f0784952-7efc-450d-b273-c528f2167163",
-              "parentUUID": "ae31ac8e-f9af-4c33-bbc9-7225dea8ddce",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "ada2ccd9-677a-401e-b768-696613811cff",
-            "f0784952-7efc-450d-b273-c528f2167163"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 3620,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    }
+    false
   ],
   "meta": {
     "mocha": {

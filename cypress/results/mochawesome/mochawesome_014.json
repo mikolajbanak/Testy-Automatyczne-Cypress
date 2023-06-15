@@ -1,99 +1,23 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 2,
-    "passes": 2,
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-14T13:11:24.084Z",
-    "end": "2023-06-14T13:11:32.124Z",
-    "duration": 8040,
-    "testsRegistered": 2,
-    "passPercent": 100,
-    "pendingPercent": 0,
+    "start": "2023-06-14T13:39:29.823Z",
+    "end": "2023-06-14T13:39:29.828Z",
+    "duration": 5,
+    "testsRegistered": 0,
+    "passPercent": null,
+    "pendingPercent": null,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    {
-      "uuid": "01bb1fcd-03bf-4261-9dc5-bccb34d0ca73",
-      "title": "",
-      "fullFile": "cypress\\e2e\\UI\\wpisywanie.js",
-      "file": "cypress\\e2e\\UI\\wpisywanie.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "acd88bae-4332-445d-81dc-27a6a6a05432",
-          "title": "E2E - Akcja Wpisywania",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Wpisywanie wartości",
-              "fullTitle": "E2E - Akcja Wpisywania Wpisywanie wartości",
-              "timedOut": null,
-              "duration": 6639,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit(\"/\");\n//cy.get(\"#search_query_top\").type(\"Przykładowy Produkt{backspace}\", {delay: 500})\ncy.searchPhrase(\"Nowy Tekst{backspace}\", 500);",
-              "err": {},
-              "uuid": "c6706e91-4c4e-433c-b485-5f5c3eb780dc",
-              "parentUUID": "acd88bae-4332-445d-81dc-27a6a6a05432",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Czyszczenie wartości z pola",
-              "fullTitle": "E2E - Akcja Wpisywania Czyszczenie wartości z pola",
-              "timedOut": null,
-              "duration": 1331,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit(\"/\");\ncy.get(\"#search_query_top\").clear();",
-              "err": {},
-              "uuid": "9c8eee89-37b7-41d3-a490-fe6bdd4e9ace",
-              "parentUUID": "acd88bae-4332-445d-81dc-27a6a6a05432",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "c6706e91-4c4e-433c-b485-5f5c3eb780dc",
-            "9c8eee89-37b7-41d3-a490-fe6bdd4e9ace"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 7970,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    }
+    false
   ],
   "meta": {
     "mocha": {

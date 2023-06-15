@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.934" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2023-06-14T13:11:19" tests="0" file="cypress\e2e\UI\wgrywaniePliku.js" time="0.000" failures="0">
-  </testsuite>
-  <testsuite name="E2E - Wgrywanie Pliku" timestamp="2023-06-14T13:11:19" tests="1" time="0.812" failures="0">
-    <testcase name="E2E - Wgrywanie Pliku Wgrywanie Pliku do Inputa" time="0.892" classname="Wgrywanie Pliku do Inputa">
-    </testcase>
-  </testsuite>
-</testsuites>

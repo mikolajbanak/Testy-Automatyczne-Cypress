@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="2.946" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2023-06-14T13:10:18" tests="0" file="cypress\e2e\UI\checkbox.js" time="0.000" failures="0">
-  </testsuite>
-  <testsuite name="E2E - Akcje kliknięcia checkbox" timestamp="2023-06-14T13:10:18" tests="1" time="2.849" failures="0">
-    <testcase name="E2E - Akcje kliknięcia checkbox Checkbox" time="2.884" classname="Checkbox">
-    </testcase>
-  </testsuite>
-</testsuites>
