@@ -19,7 +19,8 @@
     "pre-test-run": "npm run delete:reports",
     "allTests": "npx cypress run --record --key 18998864-dc91-49ac-92bf-fc89937f8a4c",
     "post-test-run": "npm run mochaawesome:merge && npm run npx marge mochawesome.json",
-    "fullTest2": "npm run pre-test-run && npm run allTests && npm run post-test-run" 
+    "fullTest2": "npm run pre-test-run && npm run allTests && npm run post-test-run",
+    "generate-reports": "marge cypress/results/mochawesome/mochawesome.json --reportDir ,/ --inLine" 
   },
   "keywords": [
     "cypress",
