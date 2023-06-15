@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="18.835" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-06-15T11:28:49" tests="0" file="cypress\e2e\UI\Lokalizatory.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Lesson" timestamp="2023-06-15T11:28:50" tests="2" time="18.756" failures="1">
+    <testcase name="E2E - Lesson Lokalizatory" time="5.033" classname="Lokalizatory">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `[src=&quot;http://automationpractice.pl/modules/themeconfigurator/img/banner-img7.jpg&quot;][width=&quot;381&quot;]`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `[src="http://automationpractice.pl/modules/themeconfigurator/img/banner-img7.jpg"][width="381"]`, but never found it.
+    at Context.eval (webpack:///./cypress/e2e/UI/Lokalizatory.js:24:11)]]></failure>
+    </testcase>
+    <testcase name="E2E - Lesson Lokalizatory część2" time="1.532" classname="Lokalizatory część2">
+    </testcase>
+  </testsuite>
+</testsuites>
