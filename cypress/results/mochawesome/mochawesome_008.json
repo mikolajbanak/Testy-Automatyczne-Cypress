@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-14T13:38:42.361Z",
-    "end": "2023-06-14T13:38:44.811Z",
-    "duration": 2450,
+    "start": "2023-06-15T11:37:42.945Z",
+    "end": "2023-06-15T11:37:44.789Z",
+    "duration": 1844,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,49 +18,49 @@
   },
   "results": [
     {
-      "uuid": "d594963f-b4a5-4e9f-b8ec-b1e6534009ea",
+      "uuid": "3d952b5f-0382-4cd1-990d-ce37bdf0d82a",
       "title": "",
-      "fullFile": "cypress\\e2e\\UI\\invoke.js",
-      "file": "cypress\\e2e\\UI\\invoke.js",
+      "fullFile": "cypress\\e2e\\UI\\klikniecie.js",
+      "file": "cypress\\e2e\\UI\\klikniecie.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "f6bd9967-76b7-49bd-b40f-adf6eeffd8ff",
-          "title": "E2E - Metoda Invoke",
+          "uuid": "3ed03889-855e-4342-b521-b31dcc522d71",
+          "title": "E2E - Akcje kliknięcia",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Invoke",
-              "fullTitle": "E2E - Metoda Invoke Invoke",
+              "title": "Klikniecie na element",
+              "fullTitle": "E2E - Akcje kliknięcia Klikniecie na element",
               "timedOut": null,
-              "duration": 2409,
+              "duration": 1807,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(\"/\");\n//Pobieranie wartości z danego elementu\ncy.get('[title=\"Contact us\"]').invoke(\"text\").then(tekst => {\n  cy.log(tekst);\n});\n// Uzyskanie dostępu do wartości atrybutu\ncy.get('[title=\"Contact us\"]').invoke(\"attr\", \"href\").then(link => {\n  cy.log(link);\n});\ncy.get('[title=\"Contact us\"]').invoke(\"attr\", \"title\").then(title => {\n  cy.log(title);\n});\n// Pobieranie wartości value\ncy.get('#search_query_top').type(\"Przykładowa wartość\").invoke(\"prop\", \"value\").then(check => {\n  cy.log(check);\n});",
+              "code": "cy.visit(\"/\");\ncy.contains('[title=\"Contact us\"]', 'Contact us').click();\ncy.get('[title=\"Return to Home\"]').click();",
               "err": {},
-              "uuid": "48999a4a-24d5-4deb-90bd-509a12e0e462",
-              "parentUUID": "f6bd9967-76b7-49bd-b40f-adf6eeffd8ff",
+              "uuid": "ad09dde4-3963-4482-89cd-022ab72082e4",
+              "parentUUID": "3ed03889-855e-4342-b521-b31dcc522d71",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "48999a4a-24d5-4deb-90bd-509a12e0e462"
+            "ad09dde4-3963-4482-89cd-022ab72082e4"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2409,
+          "duration": 1807,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -84,7 +84,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": false,
+        "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -97,7 +97,7 @@
         "id": "default",
         "reportDir": "cypress/results/mochawesome",
         "overwrite": false,
-        "html": false,
+        "html": true,
         "json": true
       },
       "version": "6.2.0"

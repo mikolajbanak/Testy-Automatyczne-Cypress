@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
 
-describe("E2E - Metoda Invoke", ()=>{
+describe("E2E - Invoke", ()=>{
     it("Invoke", () =>{
         cy.visit("/");
 

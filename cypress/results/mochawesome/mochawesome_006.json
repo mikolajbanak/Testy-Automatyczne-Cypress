@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-14T13:38:30.138Z",
-    "end": "2023-06-14T13:38:31.349Z",
-    "duration": 1211,
+    "start": "2023-06-15T11:37:32.677Z",
+    "end": "2023-06-15T11:37:36.039Z",
+    "duration": 3362,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,49 +18,49 @@
   },
   "results": [
     {
-      "uuid": "31dc59c6-006b-4269-b9d1-44f998e6b50c",
+      "uuid": "063d65ff-745d-47ec-876a-d9e3e4121d9b",
       "title": "",
-      "fullFile": "cypress\\e2e\\UI\\customCommands.js",
-      "file": "cypress\\e2e\\UI\\customCommands.js",
+      "fullFile": "cypress\\e2e\\UI\\examplePageObjectModel.js",
+      "file": "cypress\\e2e\\UI\\examplePageObjectModel.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "7e6e9dd3-fe8e-44db-ade1-188607cafe03",
-          "title": "E2E - CustomCommands",
+          "uuid": "2fbf6fa4-85e2-4907-a273-6fe39c3a6db9",
+          "title": "E2E - Akcja wybrania opcji select",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "Przykład zastosowania komendy",
-              "fullTitle": "E2E - CustomCommands Przykład zastosowania komendy",
+              "title": "Wybieranie opcji",
+              "fullTitle": "E2E - Akcja wybrania opcji select Wybieranie opcji",
               "timedOut": null,
-              "duration": 1177,
+              "duration": 3308,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.openTshirtsTab();",
+              "code": "cy.visit(\"/index.php?id_category=3&controller=category\");\n// Po nazwie\n_selectPage.default.select.select(\"In stock\");\n// Po value\n_selectPage.default.select.select(\"price:asc\");\n// Po indexach\n_selectPage.default.select.select(7);",
               "err": {},
-              "uuid": "04e3b045-1316-4ae6-be67-875cc53e4ad9",
-              "parentUUID": "7e6e9dd3-fe8e-44db-ade1-188607cafe03",
+              "uuid": "87bb6eeb-f908-49ce-bf04-ff0b45e0a8ce",
+              "parentUUID": "2fbf6fa4-85e2-4907-a273-6fe39c3a6db9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "04e3b045-1316-4ae6-be67-875cc53e4ad9"
+            "87bb6eeb-f908-49ce-bf04-ff0b45e0a8ce"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1177,
+          "duration": 3308,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -84,7 +84,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": false,
+        "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -97,7 +97,7 @@
         "id": "default",
         "reportDir": "cypress/results/mochawesome",
         "overwrite": false,
-        "html": false,
+        "html": true,
         "json": true
       },
       "version": "6.2.0"

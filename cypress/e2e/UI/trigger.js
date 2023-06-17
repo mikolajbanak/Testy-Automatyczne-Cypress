@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
 
-describe("E2E - Scrollowanie/Najechanie", ()=>{
+describe("E2E - Scrolling/Hovering", ()=>{
     it("Najechanie na element", () =>{
         cy.visit("/");
         cy.get('a[title="Dresses"]').eq(1).trigger("focus");
@@ -8,7 +8,7 @@ describe("E2E - Scrollowanie/Najechanie", ()=>{
         
     })
 
-    it("Scrollowanie do boxa specials", ()=>{
+    it("Scroll IntoView", ()=>{
         cy.visit("/");
         cy.get('a[title="Dresses"]').eq(1).trigger("focus");
         cy.get('li.sfHover a[title="Summer Dresses"]').click();

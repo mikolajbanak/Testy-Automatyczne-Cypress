@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-14T13:38:08.734Z",
-    "end": "2023-06-14T13:38:12.309Z",
-    "duration": 3575,
+    "start": "2023-06-15T11:37:13.281Z",
+    "end": "2023-06-15T11:37:16.556Z",
+    "duration": 3275,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "76354d6e-422d-47dd-bff7-746c9f0be09f",
+      "uuid": "2125a27d-a668-41f0-908d-3031623df48b",
       "title": "",
       "fullFile": "cypress\\e2e\\UI\\Lokalizatory.js",
       "file": "cypress\\e2e\\UI\\Lokalizatory.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "444a513b-4ec6-4111-8153-0069e17ec0d5",
+          "uuid": "6a59ccf2-cbd5-48c7-9ab5-d9e2858aac32",
           "title": "E2E - Lesson",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "Lokalizatory",
               "fullTitle": "E2E - Lesson Lokalizatory",
               "timedOut": null,
-              "duration": 2726,
+              "duration": 2608,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(\"/\");\n// Po znaczniku\ncy.get(\"a\");\n// Identyfikator\ncy.get(\"#search_query_top\");\n// Po klasie\ncy.get(\".form-control\");\n// Po atrybutach\ncy.get('[name=\"search_query\"]');\ncy.get('[placeholder=\"Search\"]');\n//Dokładniejszy atrybut wraz podaniem znacznika\ncy.get('input[placeholder=\"Search\"]');\n//Pobieranie elementów po kilku atrybutach\ncy.get('[src=\"http://automationpractice.pl/modules/themeconfigurator/img/banner-img7.jpg\"][width=\"381\"]');\n//Zalecana Praktyka pobierania elementów\n//cy.get('[data.cy=\"wyszukiwarla\"]')",
+              "code": "cy.visit(\"/\");\n// Po znaczniku\ncy.get(\"a\");\n// Identyfikator\ncy.get(\"#search_query_top\");\n// Po klasie\ncy.get(\".form-control\");\n// Po atrybutach\ncy.get('[name=\"search_query\"]');\ncy.get('[placeholder=\"Search\"]');\n//Dokładniejszy atrybut wraz podaniem znacznika\ncy.get('input[placeholder=\"Search\"]');\n// //Pobieranie elementów po kilku atrybutach\n// cy.get('[src=\"http://automationpractice.pl/modules/themeconfigurator/img/banner-img7.jpg\"][width=\"381\"]')\n//Zalecana Praktyka pobierania elementów\n//cy.get('[data.cy=\"wyszukiwarla\"]')",
               "err": {},
-              "uuid": "60025897-1264-47e3-90de-edc803a6a6a3",
-              "parentUUID": "444a513b-4ec6-4111-8153-0069e17ec0d5",
+              "uuid": "c8b17773-dccb-4a6c-8f12-f266e7e41d64",
+              "parentUUID": "6a59ccf2-cbd5-48c7-9ab5-d9e2858aac32",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Lokalizatory część2",
               "fullTitle": "E2E - Lesson Lokalizatory część2",
               "timedOut": null,
-              "duration": 798,
+              "duration": 622,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.visit(\"/\");\ncy.contains(\"Shop now !\"); //< Szukanie po tekście\ncy.contains('[title=\"Contact us\"]', 'Contact us');\ncy.get(\"li\").parent(\"#home-page-tabs\").find(\"li\").eq(1);\ncy.get(\"li\").parent(\"#home-page-tabs\").find(\"li\").contains(\"Best Sellers\");",
               "err": {},
-              "uuid": "a13e19bc-9311-4330-a473-949c3b103833",
-              "parentUUID": "444a513b-4ec6-4111-8153-0069e17ec0d5",
+              "uuid": "d2de523e-c9ec-4a1a-a479-a7579f3828e1",
+              "parentUUID": "6a59ccf2-cbd5-48c7-9ab5-d9e2858aac32",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "60025897-1264-47e3-90de-edc803a6a6a3",
-            "a13e19bc-9311-4330-a473-949c3b103833"
+            "c8b17773-dccb-4a6c-8f12-f266e7e41d64",
+            "d2de523e-c9ec-4a1a-a479-a7579f3828e1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3524,
+          "duration": 3230,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -103,7 +103,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": false,
+        "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -116,7 +116,7 @@
         "id": "default",
         "reportDir": "cypress/results/mochawesome",
         "overwrite": false,
-        "html": false,
+        "html": true,
         "json": true
       },
       "version": "6.2.0"

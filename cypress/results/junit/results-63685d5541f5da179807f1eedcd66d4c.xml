@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.479" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-06-15T11:38:21" tests="0" file="cypress\e2e\lighthouse.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Lighthouse Test" timestamp="2023-06-15T11:38:21" tests="1" time="1.081" failures="0">
+    <testcase name="Lighthouse Test Pierwszy test Lighthouse" time="1.439" classname="Pierwszy test Lighthouse">
+    </testcase>
+  </testsuite>
+</testsuites>

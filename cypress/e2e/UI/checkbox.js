@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
 
-describe("E2E - Akcje kliknięcia checkbox", ()=>{
+describe("E2E - Checkboxes", ()=>{
     it("Checkbox", () =>{
         cy.visit("/index.php?id_category=3&controller=category");
         // Zaznaczanie pojedyńczych

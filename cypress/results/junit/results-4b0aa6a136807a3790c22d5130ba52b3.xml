@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.848" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-06-15T11:37:58" tests="0" file="cypress\e2e\UI\trigger.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Scrollowanie/Najechanie" timestamp="2023-06-15T11:37:58" tests="2" time="2.767" failures="0">
+    <testcase name="E2E - Scrollowanie/Najechanie Najechanie na element" time="1.954" classname="Najechanie na element">
+    </testcase>
+    <testcase name="E2E - Scrollowanie/Najechanie Scrollowanie do boxa specials" time="0.875" classname="Scrollowanie do boxa specials">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,23 +1,80 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-14T13:38:15.841Z",
-    "end": "2023-06-14T13:38:15.842Z",
-    "duration": 1,
-    "testsRegistered": 0,
-    "passPercent": null,
-    "pendingPercent": null,
+    "start": "2023-06-15T11:37:19.793Z",
+    "end": "2023-06-15T11:37:21.274Z",
+    "duration": 1481,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    false
+    {
+      "uuid": "526f58c2-ab6f-4136-9764-f027df7e8fc8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\UI\\asercje.js",
+      "file": "cypress\\e2e\\UI\\asercje.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b8a2882a-a281-4b64-ad3f-8a704a1d36df",
+          "title": "E2E - Asercje",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Asercje expect oraz should",
+              "fullTitle": "E2E - Asercje Asercje expect oraz should",
+              "timedOut": null,
+              "duration": 1390,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\n//Weryfikacja tekstu\ncy.get('a[title=\"Contact us\"]').should(\"contain\", \"Contact us\");\ncy.get('a[title=\"Contact us\"]').then(zakladka => {\n  expect(zakladka).to.contain(\"Contact us\");\n});\n// Sprawdzenie czy nie zawiera tekstu\ncy.get('a[title=\"Contact us\"]').should(\"not.contain\", \"test\");\ncy.get('a[title=\"Contact us\"]').then(zakladka => {\n  expect(zakladka).not.to.contain(\"test\");\n});\n//Weryfikacja czy znacznik posiada klase\ncy.get('#search_query_top').should(\"have.class\", \"search_query form-control ac_input\");\ncy.get('#search_query_top').then(searchbox => {\n  expect(searchbox).have.class(\"search_query form-control ac_input\");\n});\n//Czy element jest widoczny\ncy.get('#search_query_top').should(\"be.visible\");\ncy.get('#search_query_top').then(searchbox => {\n  expect(searchbox).to.be.visible;\n});\n//Weryfikacja ilości pobranych elementów\ncy.get(\"ul.sf-menu\").find(\"li\").should(\"have.length\", 16);\ncy.get(\"ul.sf-menu\").find(\"li\").then(zakladki => {\n  expect(zakladki).have.length(16);\n});\n//Weryfikacja wartości css danego elementu\ncy.get('#search_query_top').should(\"have.css\", \"line-height\", \"18.5714px\");\ncy.get('#search_query_top').then(wyszukiwarka => {\n  expect(wyszukiwarka).have.css(\"line-height\", \"18.5714px\");\n});",
+              "err": {},
+              "uuid": "c48bff5d-1973-4eb4-8521-3fa9c61a9d74",
+              "parentUUID": "b8a2882a-a281-4b64-ad3f-8a704a1d36df",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c48bff5d-1973-4eb4-8521-3fa9c61a9d74"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1390,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
   ],
   "meta": {
     "mocha": {
@@ -27,7 +84,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": false,
+        "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -40,7 +97,7 @@
         "id": "default",
         "reportDir": "cypress/results/mochawesome",
         "overwrite": false,
-        "html": false,
+        "html": true,
         "json": true
       },
       "version": "6.2.0"
