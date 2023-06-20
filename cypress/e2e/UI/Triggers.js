@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 
 describe("E2E - Trackers test",() => {
-    it("Lokalizatory", () =>{
+    it("Trackers", () =>{
         cy.visit("/");
 
         // Po znaczniku
@@ -27,7 +27,7 @@ describe("E2E - Trackers test",() => {
         //cy.get('[data.cy="wyszukiwarla"]')
     })
 
-    it("Lokalizatory część2", () =>{
+    it("Trackers part2", () =>{
         cy.visit("/");
 
         cy.contains("Shop now !"); //< Szukanie po tekście

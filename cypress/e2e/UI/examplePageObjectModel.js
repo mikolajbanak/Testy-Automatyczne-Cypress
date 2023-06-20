@@ -3,7 +3,7 @@
 import selectPage from "../../support/Page-Object/selectPage";
 
 describe("E2E - Select", ()=>{
-    it("Wybieranie opcji", () =>{
+    it("Selecting options", () =>{
         cy.visit("/index.php?id_category=3&controller=category");
         // Po nazwie
         selectPage.select.select("In stock")

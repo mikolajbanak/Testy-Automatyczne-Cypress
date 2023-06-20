@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 
 describe("E2E - Assertions", ()=>{
-    it("Asercje expect oraz should", () =>{
+    it("Assertions expect and should", () =>{
         cy.visit("/");
 
         //Weryfikacja tekstu

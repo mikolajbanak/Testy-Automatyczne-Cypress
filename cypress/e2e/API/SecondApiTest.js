@@ -1,12 +1,12 @@
 /// <reference types="cypress"/>
 
-describe("E2E - Wykonywanie Zapytania Bezpośrednio do API", ()=>{
+describe("E2E - API", ()=>{
     beforeEach(function(){
         cy.fixture("example").then(data =>{
             this.daneApi = data
         })
     })
-    it("Autoryzacja + Dodawanie nowego artykułu", () =>{
+    it("authorization", () =>{
 
         //Ta albo druga metoda do randomowego tytułu
         // const uuid = () => Cypress._.random(0, 1e6)

@@ -1,12 +1,12 @@
 /// <reference types="cypress"/>
 
-describe("E2E - Testy Api", ()=>{
+describe("E2E - API part1", ()=>{
     beforeEach(function(){
         cy.fixture("example").then(data =>{
             this.daneApi = data
         })
     })
-    it("Weryfikacja tagów API", () =>{
+    it("Validate API tags", () =>{
         cy.intercept("GET", "https://api.realworld.io/api/tags").as("requestTag");
         cy.visit("https://angular.realworld.io/");
         cy.wait("@requestTag")
@@ -17,7 +17,7 @@ describe("E2E - Testy Api", ()=>{
         })
     })
 
-    it("Niepoprawne logowanie Logowania", function()  {
+    it("Checking Forbidden", function()  {
         cy.intercept("POST", "https://api.realworld.io/api/users/login").as("Forbidden");
         cy.visit("https://angular.realworld.io/");
         cy.get("a.nav-link").contains("Sign in").click();
@@ -30,7 +30,7 @@ describe("E2E - Testy Api", ()=>{
         })
     })
 
-    it("Poprawne logowanie", function(){
+    it("Checking login with valid credentials", function(){
         cy.intercept("GET", "https://api.realworld.io/api/tags", {fixture:'tags.js'}).as("requestTag");
         cy.visit("https://angular.realworld.io/");
         cy.get("a.nav-link").contains("Sign in").click();

@@ -1,6 +1,6 @@
 
 describe("Lighthouse Test", () => {
-    it("Pierwszy test Lighthouse",() => {
+    it("Lighthouse first test",() => {
         cy.visit('/')
         cy.lighthouse({
             performance: 85,
